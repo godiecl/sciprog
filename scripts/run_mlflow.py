@@ -21,8 +21,10 @@ def main():
     # Bunch object with .data (features), .target (labels), .feature_names
     wine = load_wine()
     # 178×13 DataFrame (alcohol, malic_acid, ...)
+    # pyrefly: ignore [missing-attribute]
     X = pd.DataFrame(wine.data, columns=wine.feature_names)
     # 178 class labels (0, 1, 2)
+    # pyrefly: ignore [missing-attribute]
     y = wine.target
 
     # 80/20 stratified split (random_state fixes seed)
@@ -72,8 +74,12 @@ if __name__ == "__main__":
 
     # Store runs and metadata in a SQLite database under output/
     mlflow.set_tracking_uri(f"sqlite:///{(output_dir / 'mlflow.db').as_posix()}")
+
     # Group runs under this experiment name
     mlflow.set_experiment("wine-classification")
+
+    # log!
+    # mlflow.sklearn.autolog()
 
     # Measure and log total wall-clock time of the block
     with benchmark("main", log):
