@@ -9,7 +9,7 @@ prettytable==3.17.0
 pymupdf4llm==1.27.2.3
 pyrefly==1.0.0
 scipy==1.16.3
-setuptools==81.0.0
+setuptools==83.0.0
 spacy==3.8.14
 tqdm==4.67.3
 ty==0.0.39
