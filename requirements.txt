@@ -1,11 +1,12 @@
 coloredlogs==15.0.1
-fastapi==0.140.5
+fastapi==0.140.13
 form2request==0.2.0
 humanize==4.16.0
 imageio==2.37.4
 instructor==1.15.4
 ipywidgets==8.1.8
 jupyterlab==4.6.2
+mlflow==3.14.0
 mpld3==0.5.12
 numba==0.66.0
 pandas==3.0.5
@@ -26,6 +27,6 @@ sqlalchemy==2.0.51
 streamlit==1.60.0
 sympy==1.14.0
 tqdm==4.70.0
-ty==0.0.63
+ty==0.0.64
 typeguard==4.6.0
 ucimlrepo==0.0.7
