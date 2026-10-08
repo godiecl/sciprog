@@ -5,7 +5,7 @@ humanize==4.16.0
 imageio==2.37.4
 instructor==1.15.4
 ipywidgets==8.1.8
-jupyterlab==4.6.2
+jupyterlab==4.6.4
 mlflow==3.14.0
 mpld3==0.5.12
 numba==0.66.0
